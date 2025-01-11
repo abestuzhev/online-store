@@ -1,0 +1,32 @@
+.switchWrap {
+    display: flex;
+    align-items: center;
+    font-size: var(--fzM);
+    line-height: var(--lineHeightXS);
+    color: var(--colorBlack);
+    gap: 12px;
+
+    :global {
+        .ant-switch {
+            background: var(--black-3);
+            min-width: 40px;
+            height: 24px;
+            padding: 4px;
+        }
+
+        .ant-switch-handle {
+            top: 4px;
+            inset-inline-start: 4px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .ant-switch.ant-switch-checked {
+            background: var(--colorPurpleLite);
+
+            &:hover:not(.ant-switch-disabled) {
+                background: var(--colorPurple);
+            }
+        }
+    }
+}

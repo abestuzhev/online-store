@@ -1,0 +1,25 @@
+.wrapper {
+    height: 100%;
+    margin-bottom: 84px;
+
+    &Top {
+        margin-top: var(--mar5);
+    }
+
+    &Lock {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        margin-bottom: 48px;
+    }
+}

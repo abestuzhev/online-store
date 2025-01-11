@@ -1,0 +1,61 @@
+.dev {
+    &-text {
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--black-5);
+        cursor: pointer;
+    }
+
+    &-tooltip {
+
+    }
+
+    &-header {
+        height: 64px;
+        background: linear-gradient(90deg, #474B95 0%, #7552AE 100%), #8879C2;;
+
+        &:not(.header_fixed).transparent {
+            --backgroundFixed: transparent;
+            background: transparent;
+            background-color: transparent;
+        }
+    }
+
+    &-footer {
+        width: 100%;
+        padding: 40px;
+        height: 421px;
+        background: linear-gradient(90deg, #474B95 0%, #7552AE 100%), #8879C2;
+    }
+
+    &-wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    &-section {
+        flex: 100%;
+    }
+
+    &-layout {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1229px;
+    }
+
+    &-badge {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+
+        button {
+            background-color: #fff;
+        }
+    }
+}

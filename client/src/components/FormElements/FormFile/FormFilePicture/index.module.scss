@@ -1,0 +1,147 @@
+.uploaderPicture {
+    padding: var(--mar7) 0 0;
+    &Card {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        cursor: pointer;
+
+
+        & > div {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        &Img {
+            border-radius: var(--borderLg);
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: all .1s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .1s ease-in-out;
+            }
+        }
+
+        &Section {
+            overflow: hidden;
+            border-radius: var(--borderLg);
+            //box-shadow: inset  0 0 0 3px var(--black-3);
+            border: 2px solid var(--black-3);
+            width: 100%;
+            height: 100px;
+            position: relative;
+            margin-bottom: var(--mar11);
+            //transition: all .1s ease-in-out;
+        }
+
+        &Operation {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--mar10);
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: var(--colorWhite);
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+
+            a {
+                color: var(--black-6);
+                font-size: var(--pM);
+                line-height: var(--lineHeightXS);
+                svg {
+                    position: relative;
+                    top: 1px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+        }
+
+        &:hover {
+            color: var(--black-6);
+            .uploaderPictureCardSection {
+                //transition: all .1s ease-in-out;
+                border-color: var(--black-6);
+            }
+
+            .uploaderPictureCardOperation {
+                //transition: all .1s ease-in-out;
+                opacity: 1;
+                visibility: visible;
+                z-index: 10;
+            }
+        }
+    }
+
+    &Error {
+        color: var(--colorError);
+    }
+}
+
+@media (max-width: 1279px) {
+    .uploaderPicture {
+        //padding: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .uploaderPicture {
+        padding: 0;
+    }
+
+}
+
+:global {
+    .ant-upload-wrapper.ant-upload-picture-card-wrapper {
+        .ant-upload-list.ant-upload-list-picture-card {
+            .ant-upload-list-item-container {
+                margin-bottom: 0;
+                width: 150px ;
+                height: 137px ;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .uploaderPicture {
+            padding: var(--mar9) 0 0;
+        }
+        .ant-upload-wrapper.ant-upload-picture-card-wrapper {
+            .ant-upload-list.ant-upload-list-picture-card {
+                .ant-upload-list-item-container {
+                    width: 137px ;
+                    height: 128px ;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .ant-upload-wrapper.ant-upload-picture-card-wrapper {
+            .ant-upload-list.ant-upload-list-picture-card {
+                .ant-upload-list-item-container {
+                    width: 110px ;
+                    height: 128px ;
+                }
+            }
+        }
+    }
+}

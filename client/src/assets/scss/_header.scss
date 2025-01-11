@@ -1,0 +1,7 @@
+.header:not(.header_fixed) {
+    &.transparent {
+        --backgroundFixed: transparent;
+        background: transparent;
+        background-color: transparent;
+    }
+}

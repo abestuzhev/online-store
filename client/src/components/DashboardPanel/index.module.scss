@@ -1,0 +1,23 @@
+.dashboardPanel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+
+    &Bar {
+        flex: 0 0 240px;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, .05);
+    }
+
+    &Content {
+        background-color: var(--colorWhite);
+        padding: 32px;
+        border-radius: 8px;
+        flex: auto;
+        min-height: 50vh;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, .05);
+    }
+}

@@ -1,0 +1,69 @@
+.form {
+    &Section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &Row {
+            .formSectionBody {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .formSectionField {
+                width: 100%;
+                &Col {
+                    width: calc(50% - 8px);
+                }
+            }
+        }
+
+        &Group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 16px;
+            border: 1px solid var(--black-3);
+            border-radius: var(--borderMd);
+            background-color: var(--black-1);
+
+            &Title {
+                font-size: 16px;
+                line-height: 22px;
+                color: var(--black-6);
+                font-family: Golos Text, sans-serif;
+                max-width: 95%;
+                font-weight: 600;
+            }
+
+            &Body {
+                display: flex;
+                flex-wrap: nowrap;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        }
+
+        &Body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+
+        &Field {
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+
+            &Remove {
+                flex: 40px;
+            }
+        }
+
+        &Footer {
+
+        }
+    }
+}

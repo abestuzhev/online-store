@@ -1,0 +1,65 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    &Bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+        background-color: var(--black-2);
+        padding: 24px 24px 32px;
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+
+        &Half {
+            max-width: 50%;
+        }
+
+        &Title {
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 600;
+        }
+        
+        button {
+            background-color: #fff;
+        }
+    }
+    &Table {
+        overflow: hidden;
+
+        &Content {
+            overflow-x: auto;
+        }
+        &Row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px;
+            border-bottom: 1px solid var(--black-2);
+            gap: 12px;
+        }
+
+        &Col {
+            width: 18%;
+            -webkit-line-clamp: 2; /* Число отображаемых строк */
+            display: -webkit-box; /* Включаем флексбоксы */
+            -webkit-box-orient: vertical; /* Вертикальная ориентация */
+            overflow: hidden; /* Обрезаем всё за пределами блока */
+
+            &:nth-child(odd) {
+                //background-color: var(--black-2);
+            }
+
+            &:nth-child(1) {
+                width: 50px;
+            }
+            &:nth-child(2) {
+                min-width: 300px;
+            }
+        }
+    }
+}

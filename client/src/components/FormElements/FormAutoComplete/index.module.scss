@@ -1,0 +1,65 @@
+.formAutocomplete {
+
+    &.isDisabled {
+        input {
+            color: var(--black-4) !important;
+        }
+    }
+    :global {
+
+        .ant-select-selection-placeholder {
+            font-family: "Golos Text", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25.2px;
+            text-align: left;
+            color: var(--black-4)
+        }
+
+        .ant-select-single {
+            height: 56px !important;
+            font-family: "Golos Text", sans-serif;
+
+            input {
+                font-family: "Golos Text", sans-serif !important;
+                width: 100%;
+                padding: 10px 3px !important;
+                line-height: 1.4;
+                font-size: var(--fzXM);
+                border: 1px solid var(--colorGreyUltraLite);
+                border-radius: var(--borderMd);
+
+            }
+
+
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .formAutocomplete {
+        :global {
+
+            .ant-select-selection-placeholder {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+            }
+
+            .ant-select-single {
+                height: 47px !important;
+
+                input {
+                    padding: 12px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+
+
+            }
+        }
+    }
+
+}

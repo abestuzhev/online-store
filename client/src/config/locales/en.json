@@ -1,0 +1,343 @@
+{
+  "filter": {
+    "labels": {
+      "country": "country",
+      "region": "region",
+      "industry": "industry",
+      "status": "project stage",
+      "realization": "Implementation period to"
+    },
+    "placeholder": {
+      "default": "Select",
+      "country": "country",
+      "region": "region",
+      "industry": "industry",
+      "status": "project stage",
+      "realization": "Implementation period to"
+    },
+    "buttons": {
+      "apply": "Apply",
+      "clear": "Clear filter",
+      "allFilter": "All filters",
+      "mobileFilter": "Filters",
+      "close": "Close"
+    },
+    "mobile": {
+      "title": "Filters",
+      "buttons": {
+        "apply": "Apply",
+        "clear": "All filters",
+        "close": "Close"
+      }
+    }
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "services": "Services",
+    "service": "Showcase of investment projects"
+  },
+  "pages": {
+    "myProjects": "My projects",
+    "favorites": "Favorites",
+    "messages": "Messages",
+    "comparison": "Comparison list",
+    "appCreate": "Creating an application",
+    "detail": "Detail page"
+  },
+  "sort": {
+    "title": "Sort",
+    "found": "Found"
+  },
+  "search": {
+    "placeholder": "Find",
+    "description": "Enter the product name, company name, INN or type / activity",
+    "result": {
+      "text": "Search results are shown",
+      "buttons": {
+        "cancel": "Undo correction"
+      },
+      "options": {
+        "text": "Perhaps, you were looking for"
+      }
+    }
+  },
+  "bannerMain": {
+    "title": "Showcase of investment projects",
+    "text": "A free service for searching and comparing investment projects of different industries and stages of development. Find projects or present your own",
+    "buttons": {
+      "esia": "Log in through Public Services"
+    }
+  },
+  "investProductBanner": {
+    "info": {
+      "draft": {
+        "title": "You have a draft application for placing an investment project on the storefront. Don't forget to complete the filling and submit the project for review."
+      },
+      "new": {
+        "title": "Looking for investors?",
+        "text": "Submit an application for placing your project on the showcase so that Russian and foreign companies can see it"
+      }
+    },
+    "buttons": {
+      "create": "Submit an application",
+      "continue": "Continue filling in"
+    }
+  },
+  "card": {
+    "view": {
+      "count": {
+        "1": "View",
+        "2": "View",
+        "3": "Views"
+      },
+      "viewed": "Viewed"
+    },
+    "activeUntil": "Active until",
+    "condition": {
+      "target": "Investment attraction goals:",
+      "Amount Financing": "Required amount of financing",
+      "percentage": "Profitability per year"
+    },
+    "hiding": {
+      "status": "Project is hidden"
+    },
+    "tooltip": {
+      "edit": "Edit",
+      "hiding": {
+        "hide": "Hide the project from the catalog",
+        "show": "Show the project in the catalog"
+      },
+      "remove": "Delete",
+      "favorites": {
+        "in": "Favorites",
+        "to": "Favorites"
+      },
+      "compare": {
+        "in": "In comparison",
+        "to": "To compare"
+      }
+    }
+  },
+  "detail": {
+    "description": "Project description",
+    "ContactCard": [
+
+    ]
+  },
+  "similar": {
+    "title": "Similar projects according to your request"
+  },
+  "operation": {
+    "edit": "Edit",
+    "hiding": {
+      "hide": "Hide",
+      "show": "Show"
+    },
+    "getContact": {
+      "requested": "Contacts requested",
+      "show": "Show contact"
+    },
+    "toChat": "Go to chat",
+    "toIndex": "To the project showcase",
+    "favorites": {
+      "in": "Favorites",
+      "to": "Favorites"
+    },
+    "compare": {
+      "in": "In comparison",
+      "to": "To compare"
+    }
+  },
+  "bannerFileDownload": {
+    "title": "Additional materials on the project",
+    "text": {
+      "checkContact": "To receive a business plan and presentation, request project contacts",
+      "checkAuth": "To receive a business plan and presentation, log in to the platform",
+      "error": {
+        "notFound": "The requested files were not found"
+      }
+    }
+  },
+  "compare": {
+    "forComparison": "For comparison:",
+    "buttons": {
+      "removeAll": "Delete everything"
+    },
+    "list": {
+      "readCompletely": "Read completely"
+    }
+  },
+  "app": {
+    "title": "Application for inclusion in the register of investment products",
+    "banner": {
+      "title": "Stages of project publication",
+      "list": {
+        "1": "Acceptance of the application for consideration",
+        "2": "Review of the application for correctness and completeness of information",
+        "3": "Publication of the project on the showcase or return for revision"
+      }
+    },
+    "head": {
+      "title": "Fill out the form",
+      "text": "Fields are required"
+    },
+    "select": {
+      "multiple": {
+        "selected": "Selected:"
+      }
+    },
+    "phone": {
+      "placeholder": "Enter your phone number"
+    },
+    "buttons": {
+      "save": {
+        "short": "Save",
+        "long": "Save to draft"
+      },
+      "send": {
+        "short": "Send",
+        "long": "Send request"
+      }
+    },
+    "error": {
+      "default": "The field must be filled in",
+      "inn": {
+        "default": "The entered value is not an INN",
+        "count": "The INN can consist only of {{max}} digits"
+      },
+      "email": {
+        "latin": "Only Latin letters and numbers are allowed",
+        "inCorrect": "Enter the correct email",
+        "symbolCount": "Enter an email of less than {{length}} characters"
+      },
+      "file": {
+        "count_one": "You cannot upload more {{count}} file",
+        "count_other": "You cannot upload more {{count}} files",
+        "format": "File {{name}} was not attached. Wrong format.",
+        "sizeMax": "File {{name}} was not attached. Invalid maximum file size",
+        "sizeMin": "File {{name}} was not attached. Invalid minimum file size"
+      },
+      "phone": "Enter the phone number",
+      "latin": "Only Latin letters and numbers are allowed",
+      "cyrillic": "Only Cyrillic is allowed",
+      "maxSymbols": "Maximum number of characters",
+      "minSymbols": "Minimum number of characters",
+      "MaxNumber": "Maximum allowed number",
+      "minNumber": "Minimum allowed number",
+      "url": "Enter the correct website address",
+      "checkbox": "To send an application, fill in all required fields on the page",
+      "number": "Enter the correct number",
+      "agreement": "You have not given consent to the processing of data, it is impossible to send an application without it"
+    },
+    "file": {
+      "buttons": {
+        "remove": "Delete",
+        "download": "Download"
+      },
+      "maxSize": "Maximum file size 5 MB",
+      "maxCount": "Maximum number of files",
+      "type": "File types",
+      "operation": {
+        "select":"Select a file",
+        "selectDesired":"Select the desired file",
+        "dropOrSelect":"Drag the file here or <b>select it on your computer</b>"
+      }
+    }
+  },
+  "modal": {
+    "filter": {
+      "title": "All filters",
+      "buttons": {
+        "apply": "Apply",
+        "clear": "Clear filter"
+      }
+    },
+    "fullAccess": {
+      "title": "Full access required",
+      "text": "To access the service, you need to log in through the Public Services portal. Other services and government support measures will also be available to you."
+    },
+    "hide": {
+      "title": "Are you sure you want to hide the project from the catalog?",
+      "text": "If you hide a project, other users will not see it in the project list"
+    },
+    "remove": {
+      "title": "Are you sure you want to delete the project from the catalog?",
+      "text": "After deletion, your project will disappear from the catalog and will not be available for restoration"
+    },
+    "removeAll": {
+      "title": "Do you want to delete everything?",
+      "text": "The entire list will be deleted"
+    },
+    "save": {
+      "title": "Filled in data will not be saved",
+      "text": "Click Save if you want to return to the filling later"
+    },
+    "notSave": {
+      "title": "The completed data will not be saved",
+      "text": "Click \"Do not save\" if you want to leave the page"
+    },
+    "registered": {
+      "title": "This action is not available now",
+      "text": "Wait for moderation to end"
+    },
+    "rejected": {
+      "title": "This action is not available now",
+      "text": "Your project has been rejected"
+    },
+    "compare": {
+      "title": "Project description"
+    },
+    "buttons": {
+      "accessibly": "Understood",
+      "cancel": "Cancel",
+      "remove": "Delete",
+      "removeSuccess": "Yes, delete",
+      "hide": "Hide",
+      "save": "Save",
+      "notSave": "Do not save",
+      "returnToEdit": "Go back to editing",
+      "no": "No"
+    }
+  },
+  "empty": {
+    "cards": {
+      "title": "Nothing was found for your query",
+      "text": "Try to change the search parameters or reset the filters"
+    },
+    "overview": {
+      "title": "The overview is still in the process of accumulation",
+      "text": "We suggest to return later or <a href=\"/app/new/\">add</a> your investment project"
+    },
+    "projects": {
+      "title": "You don't have any projects right now",
+      "text": "Project applications that you have started creating or have already completed will appear here",
+      "buttons": {
+        "toIndex": "Go to the showcase"
+      }
+    },
+    "favorites": {
+      "title": "There's nothing here yet",
+      "text": "You haven't added any projects to your favorites yet. Go to the showcase to find projects that interest you and add them to your favorites",
+      "buttons": {
+        "toIndex": "Go to the showcase"
+      }
+    },
+    "compare": {
+      "title": "There's nothing here yet",
+      "text": "You haven't added any projects to the comparison yet. Go to the showcase to find projects you're interested in and add them to your comparison list",
+      "buttons": {
+        "toIndex": "Go to the showcase"
+      }
+    }
+  },
+  "alert": {
+    "detail": {
+      "contact": "Your contacts will be available to other users upon request"
+    },
+    "form": {
+      "data": {
+        "text": "Your data is uploaded automatically from a Single personal account <a href=\"https://reg.roscongress.org/en/login/\" target=\"_blank\">ROSCONGRESS</a>. Their correction is possible only in it."
+      }
+    }
+  }
+}

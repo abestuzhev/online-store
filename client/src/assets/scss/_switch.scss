@@ -1,0 +1,28 @@
+.ant-switch {
+    width: 40px;
+    min-width: 40px;
+    height: 24px;
+
+    .ant-switch-handle {
+        width: 16px;
+        height: 16px;
+        top: 4px;
+        inset-inline-start: 4px;
+    }
+
+    &.ant-switch-checked {
+        background-color: var(--purple-4);
+
+        &:hover:not(.ant-switch-disabled) {
+            background-color: var(--purple-4);
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 2px #f0edfc;
+        }
+    }
+    &:focus {
+        box-shadow: 0 0 0 2px #f0edfc;
+    }
+
+}

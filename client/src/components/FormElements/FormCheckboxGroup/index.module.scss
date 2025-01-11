@@ -1,0 +1,125 @@
+.checkboxGroup {
+    margin-bottom: var(--m12);
+    :global {
+        .ant-checkbox {
+            //top: 0.3em;
+
+            &-group {
+                flex-direction: column;
+            }
+
+            &-wrapper {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 0 0 20px 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-size: var(--fzM);
+                    line-height: var(--lineHeightXS);
+                    color: var(--black-6);
+                }
+
+                .ant-checkbox {
+                    align-self: start;
+                }
+            }
+
+            &-inner {
+                width: 22px;
+                height: 22px;
+
+                &::after {
+                    left: 26.5%;
+                    width: 6.714286px;
+                    height: 11.142857px;
+                }
+            }
+
+
+            &-checked {
+                .ant-checkbox-inner {
+                    background-color: var(--purple-4);
+                    border-color: var(--purple-4);
+                }
+
+                &::after {
+                    border-color: var(--purple-4);
+                }
+            }
+
+            &-wrapper:hover .ant-checkbox-inner,
+            &:hover .ant-checkbox-inner,
+            &-input:focus + .ant-checkbox-inner {
+                border-color: var(--purple-4);
+            }
+        }
+    }
+
+    .checkboxGroupScroll {
+        max-height: 350px;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px var(--colorGreyLite);
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--purple-4);
+            border-radius: 10px;
+        }
+    }
+
+    .checkboxFooter {
+
+    }
+
+
+}
+
+.checkboxGroupMore {
+    font-weight: var(--fontWeightRegular);
+    font-size: var(--fzM);
+    line-height: var(--lineHeightXS);
+    color: var(--purple-5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    svg {
+        margin-left: 4px;
+        width: 8px;
+        height: auto;
+        fill: var(--purple-4);
+    }
+
+    p {
+        color: rgb(159, 159, 159);
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.checkboxGroupSearch {
+    margin-bottom: 32px;
+
+    input {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        padding: 12px 16px;
+    }
+}

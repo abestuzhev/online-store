@@ -1,0 +1,34 @@
+
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+
+    &Item {
+        padding: 12px;
+        color: var(--black-2);
+        cursor: pointer;
+
+
+
+        &Active {
+            span {
+                display: block;
+
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    right: 0;
+                    border-bottom: 2px solid;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+.addInfo {
+
+    &Body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &Grid {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &Row {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            gap: 12px;
+
+            &Remove {
+                display: flex;
+                button {
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    &Card {
+        display: flex;
+        flex-direction: column;
+        flex: 100%;
+    }
+
+
+}

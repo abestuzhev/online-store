@@ -1,0 +1,34 @@
+.formFileError {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: var(--pad6) var(--pad6) 0;
+
+    &Item {
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+        text-align: left;
+
+        &Icon {
+            margin-right: 4px;
+            svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+
+        &Text {
+            text-align: left;
+            color: var(--colorError);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .formFileError {
+        padding: 16px 16px 0 16px;
+        gap: 8px;
+    }
+
+}

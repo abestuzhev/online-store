@@ -1,0 +1,85 @@
+.formTabs {
+    //margin: -16px -12px;
+    &Nav {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &Section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    &Content {
+        //padding: 16px;
+        //background: var(--black-1);
+        //border: 1px solid var(--black-3);
+        //border-radius: var(--borderMd);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        //padding: var(--mar8) var(--mar9);
+    }
+
+    .section {
+        &Item {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 20px;
+
+            &Test {
+                background-color: red;
+            }
+            &Col2 {
+                width: calc(50% - 10px);
+            }
+            &Col3 {
+                width: calc(33% - 11px);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .formTabs {
+        &Content {
+            gap: 16px;
+        }
+
+        .section {
+            &Item {
+                &Col2 {
+                    width: 100%;
+                }
+                &Col3 {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .formTabs {
+        //margin: -12px;
+
+
+        &Nav {
+            margin-bottom: 14px;
+        }
+
+        &Content {
+            gap: 12px;
+        }
+
+
+    }
+}

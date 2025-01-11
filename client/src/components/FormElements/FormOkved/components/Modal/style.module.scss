@@ -1,0 +1,222 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  overflow: auto;
+  max-height: 100vh;
+  z-index: 99999999;
+  transform-style: flat;
+  perspective: 500px;
+  @media (max-width: 768px) {
+    padding: 40px;
+  }
+  @media (max-width: 576px) {
+    padding: 0;
+  }
+
+  &Content {
+    position: relative;
+    max-width: 990px;
+    width: 990px;
+    max-height: calc(100vh - 60px);
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    @media (max-width: 576px) {
+      max-height: 100vh;
+      min-height: 100vh;
+      border-radius: 0;
+    }
+
+    &.stickyHeader {
+      .modalHeader {
+        padding: 16px 32px;
+        box-shadow: 0 0 16px rgba(63, 67, 106, 0.12);
+        @media (max-width: 768px) {
+          padding: 12px 24px;
+        }
+        @media (max-width: 576px) {
+          padding: 16px;
+        }
+      }
+
+      .modalBody {
+        height: calc((100vh - 60px) - 64px);
+        @media (max-width: 768px) {
+          height: calc((100vh - 66px) - 56px);
+        }
+        @media (max-width: 576px) {
+          height: calc((100vh - 74px) - 54px);
+        }
+      }
+    }
+
+    &.stickyFooter,
+    &.stickyFooterContent {
+      .modalFooter {
+        padding: 32px;
+        box-shadow: none;
+        @media (max-width: 768px) {
+          padding: 24px;
+        }
+        @media (max-width: 576px) {
+          padding: 16px;
+        }
+      }
+
+      .trackVertical {
+        bottom: 110px;
+      }
+    }
+
+    &.stickyFooterContent {
+      .trackVertical {
+        opacity: 0;
+      }
+    }
+  }
+
+  &Close {
+    position: static;
+    cursor: pointer;
+    @media (max-width: 576px) {
+      display: none;
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+      color: black
+    }
+  }
+
+  &BackArrow {
+    position: static;
+    display: none;
+    margin-right: 16px;
+    cursor: pointer;
+    @media (max-width: 576px) {
+      display: block;
+    }
+
+    svg {
+      width: 15px;
+      height: 12px;
+      color: #7E6CC1;
+    }
+  }
+
+  &Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 32px 24px;
+    transition: all .2s linear;
+    @media (max-width: 768px) {
+      padding: 24px;
+    }
+    @media (max-width: 576px) {
+      justify-content: flex-start;
+      padding: 16px;
+    }
+  }
+
+  &Title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    @media (max-width: 576px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+
+  &Body {
+    height: calc((100vh - 60px) - 88px);
+    overflow: hidden;
+    background-color: transparent;
+    transition: all .2s linear;
+    @media (max-width: 768px) {
+      height: calc((100vh - 66px) - 80px);
+    }
+    @media (max-width: 576px) {
+      height: calc((100vh - 74px) - 54px);
+    }
+  }
+
+  &BodyContent {
+    padding: 0 32px 106px;
+    width: auto;
+    @media screen and (max-width: 1024px) {
+      padding: 0 32px 110px
+    }
+    @media (max-width: 768px) {
+      padding: 0 24px 90px;
+    }
+    @media (max-width: 576px) {
+      padding: 0 16px;
+    }
+  }
+
+  &Footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 32px;
+    box-shadow: 0 0 16px rgba(63, 67, 106, 0.12);
+    background-color: #fff;
+    transition: all .2s linear;
+    @media (max-width: 768px) {
+      padding: 12px 24px;
+    }
+    @media (max-width: 576px) {
+      position: fixed;
+      padding: 16px;
+    }
+
+    button {
+      &:first-child {
+        margin-right: 12px;
+        @media (max-width: 576px) {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.trackVertical {
+  top: 8px;
+  bottom: 70px;
+  right: 8px;
+  background: #F3F3F3;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .2s linear;
+
+  .thumbVertical {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: inherit;
+    background-color: #9D87F1;
+  }
+}
+
+.openModalBtnContainer {
+  margin-top: 0;
+}

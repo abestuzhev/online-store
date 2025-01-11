@@ -1,0 +1,30 @@
+.skeleton {
+    &-background {
+        background: var(--colorWhite) !important;
+        border: 1px solid var(--black-3) !important;
+        box-shadow: none !important;
+    }
+
+    &-field {
+        &-label {
+            height: 24px;
+            width: 50% !important;
+            margin-bottom: .5em;
+        }
+        &-input {
+            height: 56px;
+        }
+    }
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+
+
+    }
+}
+
+.react-loading-skeleton {
+    display: block;
+    background-color: var(--base-color) !important;
+}

@@ -1,0 +1,36 @@
+
+.back {
+    margin-bottom: 24px;
+
+    a, button {
+        width: auto;
+        font-size: var(--fzXXS);
+    }
+
+    button {
+        padding: 7px 20px 8px 16px;
+
+        svg {
+            width: 16px;
+            height: auto;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 1024px) {
+    .back {
+        margin-bottom: 16px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .back {
+        margin-bottom: 16px;
+    }
+
+}

@@ -1,0 +1,62 @@
+.formSection {
+    &Title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        border-bottom: 1px solid var(--black-3);
+        padding-bottom: 12px;
+    }
+
+    &Body {
+        padding-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .section {
+        display: flex;
+        justify-content: flex-start;
+        &Item {
+            display: block;
+            width: 100%;
+            &Col2 {
+                width: calc(50% - 10px);
+            }
+            &Col3 {
+                width: calc(33% - 11px);
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .formSection {
+        .section {
+            &Item {
+                &Col2 {
+                    display: block;
+                    width: 100%;
+                }
+
+                &Col3 {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .formSection {
+        &Title {
+            font-size: 14px;
+            line-height: 18.2px;
+        }
+    }
+
+}

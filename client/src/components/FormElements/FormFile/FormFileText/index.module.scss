@@ -1,0 +1,93 @@
+.uploaderItem {
+    padding: 16px 0 0;
+    .file {
+        display: flex;
+        justify-content: space-between;
+        font-size: var(--pL);
+        line-height: var(--lineHeightS);
+        // padding-bottom: var(--listItemPadding);
+        // margin-top: var(--listItemPadding);
+        .fileControlsWrap,
+        .fileInfo {
+            display: flex;
+        }
+        .fileControls {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: var(--wrapperPadding);
+        }
+    }
+
+    .fileIcon {
+        width: 16px;
+        min-width: 16px;
+        display: flex;
+        align-items: center;
+        color: var(--colorWhite);
+        svg {
+            width: 100%;
+        }
+    }
+
+    .fileContent {
+        padding-left: 8px;
+        display: flex;
+        align-items: center;
+        .fileName {
+            margin-right: var(--pL);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 430px;
+        }
+    }
+
+    .fileSize {
+        color: var(--colorGrey);
+    }
+    .fileButton {
+        color: var(--colorWith);
+        display: flex;
+        align-items: center;
+        svg {
+            width: 10px;
+            margin-right: 8px;
+            fill: var(--black-6);
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .uploaderItem {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .uploaderItem {
+        .file {
+            flex-wrap: wrap;
+            .fileInfo {
+                margin-bottom: 8px;
+            }
+            .fileContent {
+                align-items: start;
+                flex-direction: column;
+                .fileSize {
+                    margin-bottom: -28px;
+                    margin-top: 8px;
+                }
+                .fileName {
+                    max-width: 330px;
+                }
+            }
+            .fileControlsWrap {
+                justify-content: flex-end;
+                width: 100%;
+            }
+            .fileControls {
+                margin-left: 10px;
+            }
+        }
+    }
+}

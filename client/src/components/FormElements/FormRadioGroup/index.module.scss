@@ -1,0 +1,115 @@
+.radioGroup {
+    :global {
+        .ant-radio {
+
+            &:hover .ant-radio-inner {
+                border-color: var(--purple-4);
+            }
+
+            &-input:focus + .ant-radio-inner {
+                border-color: var(--purple-4);
+            }
+
+            &-wrapper {
+                display: flex;
+                margin: 0 0 var(--m12) 0;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                span {
+                    font-size: var(--fzM);
+                    line-height: var(--lineHeightXS);
+                    color: var(--black-6);
+                    background: transparent !important;
+                    border-color: var(--purple-4) !important;
+
+                    &::after {
+                        content: '';
+                        transform: scale(.5) !important;
+                    }
+                }
+
+                &:hover .ant-radio {
+                    border-color: var(--purple-4);
+                }
+            }
+
+            &-inner {
+                border-color: var(--purple-4);
+                &::after {
+                    background: var(--purple-4);
+                }
+            }
+
+            &-checked {
+                &::after {
+                    border-color: var(--purple-4);
+                }
+            }
+
+
+        }
+
+
+    }
+
+    &Horizontal {
+
+        :global {
+            .ant-radio-group {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: var(--mar7);
+
+                & > label {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+@media (max-width: 1023px) {
+    .radioGroup {
+        :global {
+            .ant-radio {
+
+                &-group {
+                    flex-wrap: wrap;
+                    gap: 8px;
+                }
+
+                &-wrapper {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .radioGroup {
+        :global {
+            .ant-radio {
+
+                &-wrapper {
+
+                    span {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

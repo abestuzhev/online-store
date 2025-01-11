@@ -1,0 +1,192 @@
+.rangeSlider {
+    display: block;
+}
+.inputRange {
+    border: 1px solid var(--black-3);
+    border-radius: var(--borderMd);
+    padding: var(--p8) var(--p16);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transition: all var(--trTime0) ease-out;
+
+    &:hover {
+        transition: all var(--trTime0) ease-out;
+        border-color: var(--purple-4) !important;
+        box-shadow: 0 0 0 4px #cec3f8;
+    }
+
+    &.isDisabled {
+        .inputGroupCol {
+            input {
+                color: var(--black-4);
+            }
+        }
+
+        .inputGroupIcon {
+            color: var(--black-4);
+        }
+
+        :global {
+            .ant-input[disabled] {
+                cursor: auto;
+            }
+        }
+    }
+
+    :global {
+        .ant-input:focus,
+        .ant-input-focused {
+            border: none;
+            box-shadow: none;
+        }
+
+        .ant-input-number {
+            border: none;
+
+            &-focused {
+                border: none;
+                box-shadow: none;
+            }
+
+            &-handler-wrap {
+                display: none;
+            }
+        }
+    }
+
+    &Separator {
+        padding: 0 12px 0 0;
+    }
+}
+
+.isDisabled {
+    background: var(--black-1);
+}
+
+.inputRangeField {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    //& > div {
+    //    width: 100%;
+    //}
+
+    input {
+        font-family: 'Golos Text', sans-serif !important;
+        color: var(--black-6);
+        background: none !important;
+        border: none;
+        padding: 0 !important;
+        font-size: var(--fzM);
+        line-height: var(--lineHeightXS);
+        width: 100%;
+        height: 24px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        outline: none;
+    }
+}
+
+.inputRangeIcon {
+    position: absolute;
+    right: 1px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: var(--borderMd);
+    display: flex;
+    align-items: center;
+    font-size: var(--fzXXM);
+    line-height: var(--lineHeightXS);
+    color: var(--purple-5);
+    text-align: right;
+    font-weight: 400;
+    padding: 10px 12px 10px 4px;
+    margin-top: -2px;
+}
+
+.inputRangeSlider {
+    //position: absolute;
+    //width: 100%;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
+
+    :global {
+        .ant-tooltip {
+            display: none !important;
+        }
+        .ant-slider {
+            margin: -2px 6px;
+            padding: 0;
+        }
+
+        .ant-slider-track {
+            background: var(--purple-4);
+            height: 3px !important ;
+        }
+        .ant-slider-rail , .ant-slider-step{
+            height: 1px !important ;
+        }
+
+        .ant-slider {
+            &:hover {
+                .ant-slider-track {
+                    background: var(--purple-5);
+                }
+
+                .ant-slider-handle {
+                    border-color: var(--purple-5);
+                }
+            }
+        }
+
+        .ant-slider-handle {
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            margin-top: -7px;
+            border: solid 2px var(--purple-4);
+            box-shadow: none;
+            border-radius: var(--borderCircle);
+            background-color: var(--colorWhite);
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.inputRangeSliderMinMaxValue {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: var(--fzXXS);
+    line-height: var(--lineHeightS);
+    color: var(--black-4);
+    padding: 0 8px;
+}
+
+@media (max-width: 1279px) {
+    .inputRangeIcon {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inputRange {
+        padding: 9px 16px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 767px) {
+}
+

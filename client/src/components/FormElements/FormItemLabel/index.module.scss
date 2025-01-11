@@ -1,0 +1,47 @@
+.bold {
+    font-weight: 700;
+    color: var(--black-6);
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.lock {
+    margin: 0 4px;
+    color: transparent;
+
+    span {
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        fill: var(--black-4)
+    }
+
+    &Icon {
+        margin-left: 4px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.info {
+    margin: 0 4px;
+    span {
+        position: relative;
+        top: -1px;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        fill: var(--purple-4)
+    }
+}
+
+b {
+    color: var(--purple-5);
+}

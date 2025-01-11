@@ -1,0 +1,82 @@
+.e-collapse {
+  border: none;
+  background: none;
+  margin-bottom: var(--m24);
+
+  .ant-collapse-item {
+    border: none;
+    margin-bottom: var(--m20);
+
+    &.ant-collapse-no-arrow {
+
+      .ant-collapse-header {
+        padding-left: 0;
+      }
+
+    }
+
+    .ant-collapse-header {
+      background: transparent;
+      padding-top: 0;
+      padding-left: 0;
+      padding-bottom: 0;
+      font-size: var(--fzM);
+      line-height: var(--lineHeightM);
+      font-weight: var(--fontWeightBold);
+    }
+
+    & + .ant-collapse-footer {
+      font-weight: var(--fontWeightRegular);
+      font-size: var(--fzM);
+      line-height: var(--lineHeightXS);
+      color: var(--purple-5);
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: -12px;
+      margin-bottom: 20px;
+
+
+      svg {
+        margin-left: 4px;
+        width: 8px;
+        height: auto;
+        fill: var(--purple-4);
+      }
+
+      p {
+        color: rgb(159, 159, 159);
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    .ant-collapse-icon-position-end > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+      right: 0;
+    }
+
+
+    .ant-collapse-expand-icon {
+      svg {
+        width: 10px;
+        fill: var(--purple-5);
+      }
+
+    }
+
+
+    .ant-collapse-content {
+      border: none;
+      padding: var(--p12) 0 4px;
+
+      .ant-collapse-content-box {
+        padding: 0;
+      }
+    }
+  }
+}

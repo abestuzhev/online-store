@@ -1,0 +1,25 @@
+.e-ol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mar10);
+    font-size: var(--fzXXS);
+    font-weight: 400;
+    line-height: var(--lineHeightXXS);
+    text-align: left;
+    padding-left: var(--pad8);
+
+    li {
+        list-style-type: none;
+        padding-left: 8px;
+        counter-increment: list;
+        position: relative;
+        &::before {
+            content: counter(list) ".";
+            position: absolute;
+            left: -2em;
+            width: 2em;
+            text-align: right;
+            color: var(--purple-4);
+        }
+    }
+}

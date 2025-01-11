@@ -1,0 +1,24 @@
+.auth {
+    &Body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &Footer {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        button {
+            width: 100%;
+        }
+    }
+
+    :global {
+        .ant-modal-title {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+}

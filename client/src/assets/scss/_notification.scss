@@ -1,0 +1,53 @@
+//! ant-notification
+.ant-notification {
+    .ant-notification-notice {
+        border-radius: var(--borderMd);
+        padding: var(--formItemMargBot);
+
+        .ant-notification-notice-message {
+            margin-bottom: var(--formItemMargBot);
+            font-size: var(--pM);
+            line-height: var(--lineHeightS);
+            font-weight: 800;
+            color: var(--colorPurpleLite);
+            font-family: 'Golos Text', sans-serif;
+
+            svg {
+                margin-right: var(--p8);
+            }
+        }
+
+        .e-note {
+            font-size: var(--pM);
+            color: var(--colorBlack);
+            font-family: 'Golos Text', sans-serif;
+        }
+    }
+}
+
+.e-count {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: var(--black-6);
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--borderCircle);
+    margin-top: 1px;
+
+    &-sm {
+        width: 18px;
+        height: 18px;
+    }
+    &-md {
+        width: 20px;
+        height: 20px;
+    }
+    &-lg {
+        width: 22px;
+        height: 22px;
+    }
+}

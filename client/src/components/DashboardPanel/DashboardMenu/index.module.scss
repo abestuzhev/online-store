@@ -1,0 +1,43 @@
+.dashboardMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 100%;
+
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &Btn {
+        flex: 0 0 36px;
+        height: 36px;
+        background-color: #e7e7e7;
+        border-radius: 8px;
+
+        svg {
+            fill: var(--black-4);
+        }
+    }
+
+    a {
+        flex: auto;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        padding: 6px 12px;
+        border-radius: 6px;
+
+        &:global {
+            &.active {
+                background-color: var(--black-6);
+                color: var(--colorWhite);
+            }
+        }
+    }
+}

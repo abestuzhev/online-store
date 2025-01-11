@@ -1,0 +1,126 @@
+.loaderWrapper {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    //border: 1px solid var(--colorGreyLite);
+    border-radius: var(--borderLg);
+    color: var(--black-6);
+    &.fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(255 255 255 / 45%);
+        z-index: 1;
+    }
+
+    .loaderBody {
+        top: 50%;
+        position: absolute;
+        z-index: 8;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: var(--m20);
+    }
+
+    .loaderTitle {
+        font-size: var(--fzXXXXL);
+        margin-bottom: var(--m20);
+        font-weight: var(--fontWeightBold);
+        line-height: var(--lineHeightS);
+    }
+    .loaderText {
+        font-size: var(--fzXXM);
+        line-height: var(--lineHeightXS);
+    }
+
+    //.loaderContent {
+    //    margin-bottom: var(--m20);
+    //}
+
+    .loaderIcon {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: 4px solid;
+        border-color: #e6e6e6 #e6e6e6 var(--black-6);
+        animation: lds-dual-ring 1.2s linear infinite;
+
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+
+}
+
+.loaderOverlay {
+    position: absolute;
+    z-index: 999;
+    top: 56px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .6);
+
+    .loaderWrapper {
+        height: 100%;
+    }
+}
+
+:global {
+    .ant-modal {
+        .loaderWrapper {
+            min-height: 100px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .loaderWrapper {
+        .loaderBody {
+            padding: 0 20px;
+        }
+
+        .loaderTitle {
+            margin-bottom: 16px;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+
+        .loaderText {
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .loaderWrapper {
+        .loaderTitle {
+            margin-bottom: 14px;
+            font-size: 18px;
+        }
+
+        .loaderText {
+            font-size: 14px;
+        }
+
+    }
+}

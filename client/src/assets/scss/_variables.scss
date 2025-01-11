@@ -1,0 +1,338 @@
+
+:root {
+
+    --purple-1: #EBE7FC;
+    --purple-2: #CEC3F8;
+    --purple-3: #B19FF4;
+    --purple-4: #9d87f1;
+    --purple-5: #7e6cc1;
+    --purple-6: #6E5CB3;
+    --purple-5Ultra: #EBE7FC;
+    --colorWhite: #fff;
+
+    --black-1: #F9F9F9;
+    --black-2: #f3f3f3;
+    --black-3: #e3e3e3;
+    --black-4: #9F9F9F;
+    --black-5: #212122;
+    --black-6: #000;
+
+    --indigo-1: #425EF50D;
+    --indigo-2: #425EF51A;
+    --indigo-3: #425EF533;
+    --indigo-6: #425EF5;
+
+    --yellow: #FFD633;
+    --yellowLite:#FFF0CB;
+
+    --colorPurpleBackLite:#425EF51A;
+    --colorPurpleDropzoneBackground: #425EF50D;
+
+
+    --colorPurpleRGB: 157, 135, 241;
+    --colorRedRGB: 234, 57, 75;
+    --colorGreenRGB: 101, 188, 137;
+    --colorMysticRGB: 232, 235, 242;
+    --colorBlackRGB: 0, 0, 0;
+    --colorCranberryRGB: 227, 79, 132;
+    --colorAmberRGB: 246, 197, 68;
+    --colorTealRGB: 110, 229, 185;
+
+    //* Global Colors
+    --colorPurple: #9d87f1;
+    --colorPurpleLite: #7e6cc1;
+    --colorPurpleLiteUltra: #EBE7FC;
+    --colorBlack: #000;
+    --colorYellow: #FFD633;
+    --colorGrey: #666;
+    --colorGreyDark: #666666a6;
+    --colorGreyUltraLite: #e3e3e3;
+    --colorGreyLite:#f3f3f3;
+    --colorGreyUltraLite2:#f9f9f9;
+    --colorGreyUltraLite3:#9F9F9F;
+    --colorError:#F1274C;
+    --colorBad:#EB5757;
+    --colorApproved:#219653;
+    --colorGreen: #65BC89;
+    --colorEditing:#F09537;
+    --colorOrange: #F09537;
+    --colorLightBlue: #EDF7FE;
+    --colorLynxWhite: #F6F7F9;
+    --colorTitanWhite: #F6F6F6;
+    --colorSelago: #F5F3FE;
+    --colorMystic: #858585;
+    --shadowColor:0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+    0 9px 28px 8px rgb(0 0 0 / 5%);
+    
+    //transition
+    --trTime0: 0.2s;
+    --trTime1: 0.3s;
+    --trTime2: 0.5s;
+    --trTime3: 0.7s;
+    --trTime4: 1s;
+
+
+    --h1: 40px;
+    --h2: 30px;
+    --h3: 24px;
+    --h4: 20px;
+    --h5: 18px;
+
+    --pL: 16px;
+    --pM: 14px;
+    --pS: 12px;
+
+    //border
+    --borderXSm: 3px;
+    --borderSm: 4px;
+    --borderMd: 8px;
+    --borderLg: 12px;
+    --borderCircle: 100px;
+
+    //padding design system
+    --pad1: 84px;
+    --pad2: 60px;
+    --pad3: 48px;
+    --pad4: 40px;
+    --pad5: 32px;
+    --pad6: 24px;
+    --pad7: 20px;
+    --pad8: 16px;
+    --pad9: 12px;
+    --pad10: 8px;
+    --pad11: 4px;
+
+    // margin design system
+    --mar1: 84px;
+    --mar2: 60px;
+    --mar3: 48px;
+    --mar4: 40px;
+    --mar5: 32px;
+    --mar6: 24px;
+    --mar7: 20px;
+    --mar8: 16px;
+    --mar9: 12px;
+    --mar10: 8px;
+    --mar11: 4px;
+
+    //padding old
+    --p8: 8px;
+    --p10: 10px;
+    --p12: 12px;
+    --p14: 14px;
+    --p16: 16px;
+    --p18: 18px;
+    --p20: 20px;
+    --p22: 22px;
+    --p24: 24px;
+    --p26: 26px;
+    --p32: 32px;
+    --p36: 36px;
+
+
+    //margin old
+    --m8: 8px;
+    --m10: 10px;
+    --m12: 12px;
+    --m14: 14px;
+    --m16: 16px;
+    --m18: 18px;
+    --m20: 20px;
+    --m22: 22px;
+    --m24: 24px;
+    --m26: 26px;
+    --m28: 28px;
+    --m32: 32px;
+    --m40: 40px;
+    --m60: 60px;
+
+    //button
+    --pBtnLarge: 14px 48px 18px 48px;
+    --pBtnMedium: 12px 32px 14px 32px;
+    --pBtnSmall: 10px 22px;
+    --pBtnExtraSmall: 7.5px 16px;
+
+    --hBtnLarge: 60px;
+    --hBtnMedium: 50px;
+    --hBtnSmall: 40px;
+    --hBtnExtraSmall: 32px;
+
+
+    //global margin bottom
+    --globalMargBot:24px;
+    --itemsRightLeftPadding:16px;
+    --formItemMargBot: 20px;
+
+    //font-size
+    --fzS: 10px;
+    --fzXS: 12px;
+    --fzXXS: 14px;
+    --fzM: 16px;
+    --fzXM: 18px;
+    --fzXXM: 20px;
+    --fzL: 22px;
+    --fzXL: 24px;
+    --fzXXL: 26px;
+    --fzXXXL: 28px;
+    --fzXXXXL: 30px;
+
+    //line heights
+    --lineHeightS: 1.2;
+    --lineHeightXS: 1.4;
+    --lineHeightXXS: 1.5;
+    --lineHeightXXXS: 1.6;
+    --lineHeightM: 1.8;
+
+    //fontWeight
+    --fontWeightRegular: 400;
+    --fontWeightMedium: 500;
+    --fontWeightSemiBold: 600;
+    --fontWeightBold: 700;
+
+    --checkboxIconSize: 22px;
+
+    --BtnPadding: 11.5px 24px;
+
+
+    //icon
+    --iconMargin: 10px;
+
+    --h1Modal: 24px;
+    --h2Modal: 22px;
+    --h3Modal: 20px;
+    --btnPurplePadding: 11px 22px;
+
+    //form style var
+    --formWrapperMargTop: 26px;
+    --formSectionMargBot: 35px;
+    --flexWrapWidth-50: 50%;
+    --flexWrapWidth-33: 33.333%;
+    --minSelectBox-40: 40%;
+    --iconLeftRightMargin: 8px;
+    --sectionTitlePadding: 12px var(--itemsRightLeftPadding);
+    --addBtnPadding: 13px 22px;
+
+    --itemPaddingTop: 15px;
+
+    --selectArrowSize: 14px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        //--btnPurplePadding: 8px 22px;
+        //
+        //--borderMd: 6px;
+        //--borderLg: 10px;
+        //
+        //--fzM: 14px;
+        //--fzXM: 16px;
+        //--fzXXL: 24px;
+        //
+        //--p12: 10px;
+        //
+        //
+        //--m16: 8px;
+        //--m24: 16px;
+        //--m32: 24px;
+        //--m40: 32px;
+        //--m60: 40px;
+    }
+}
+@media only screen and (max-width: 1439px) and (min-width: 768px) {
+    :root {
+        //--h1: 36px;
+        //--h2: 16px;
+        //--h3: 14px;
+        //--h4: 18px;
+        //--h5: 16px;
+        //
+        //--pL: 14px;
+        //--pM: 13px;
+        //--pS: 12px;
+
+
+        //--h1Modal: 24px;
+        //
+        //--globalMargBot:18px;
+        //
+        //--checkboxIconSize: 16px;
+        //
+        //--formWrapperMargTop: 24px;
+        //--formSectionMargBot: 24px;
+        //--minSelectBox-40: 50%;
+        //
+        //--addBtnPadding: 7px 23px;
+        //
+        //
+        //
+        //--itemPaddingTop: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    :root {
+        //--h1: 26px;
+        //--h2: 14px;
+        //--h3: 14px;
+        //--h4: 14px;
+        //--h5:14px;
+        //
+        //
+        //
+        //--p16: 12px;
+        //--p20: 14px;
+        //--p24: 16px;
+        //--p32: 24px;
+        //--p36: 28px;
+        //
+        //
+        //--m8: 4px;
+        //--m16: 8px;
+        //--m18: 14px;
+        //--m24: 16px;
+        //--m32: 24px;
+        //--m40: 24px;
+        //--m60: 24px;
+        //
+        //--pL: 14px;
+        //--pM: 12px;
+        //--pS: 12px;
+        //
+        //--borderLg: 8px;
+        //
+        //--h1Modal: 16px;
+        //--h3Modal: 16px;
+        //
+        //--formItemMargBot: 16px;
+        //--globalMargBot:12px;
+        //--itemsRightLeftPadding:12px;
+        //
+        //--checkboxIconSize: 16px;
+        //
+        //--formWrapperMargTop: 32px;
+        //--formSectionMargBot: 16px;
+        //--sectionTitlePadding: 8px var(--itemsRightLeftPadding);
+        //
+        //--btnPurplePadding: 8px 22px;
+        //--addBtnPadding: 7px 23px;
+        //
+        //--flexWrapWidth-50: 100%;
+        //--flexWrapWidth-33: 100%;
+        //--minSelectBox-40: 100%;
+        //
+        //--fzXXS: 12px;
+        //--fzM: 12px;
+        //--fzXM: 14px;
+        //--fzXXM: 16px;
+        //--fzXL: 16px;
+        //--fzXXL: 18px;
+        //--fzXXXL: 20px;
+        //--fzXXXXL: 22px;
+        //
+        //--itemPaddingTop: 10px;
+        //
+        //
+        //--pBtnMedium: 7.5px 16px;
+    }
+}

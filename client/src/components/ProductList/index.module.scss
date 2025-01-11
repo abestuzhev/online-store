@@ -1,0 +1,22 @@
+.productList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    &Item {
+        width: calc(25% - 12px);
+    }
+
+    &Row {
+        flex-direction: column;
+
+        .productList {
+            flex-direction: column;
+            &Item {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #9D87F1;
+  color: #fff;
+  transition: all .3s linear;
+  @media (max-width: 576px) {
+    width: 100%;
+    padding: 8px 12px;
+  }
+
+  &:hover {
+    border-color: #9D87F1;
+    background-color: transparent;
+    color: #000;
+  }
+
+  &Outline {
+    border-color: #9D87F1;
+    background-color: transparent;
+    color: #000;
+  }
+
+  &WithIcon {
+    svg {
+      width: 13px;
+      height: 13px;
+      margin-right: 10px;
+      stroke: #9D87F1;
+    }
+  }
+
+  &NotInLicense {
+    @media (max-width: 576px) {
+      width: auto;
+    }
+  }
+}
