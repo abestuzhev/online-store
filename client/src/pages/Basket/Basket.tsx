@@ -6,11 +6,7 @@ import { setBreadcrumb } from '../../store/reducers/breadcrambs/breadcrumbsSlice
 import { fetchBasketProducts } from '../../store/reducers/basket/actionCreator';
 
 function Basket() {
-  const location = useLocation();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const { id } = useParams();
 
   const { basketProducts } = useSelector((state) => state.basket);
 

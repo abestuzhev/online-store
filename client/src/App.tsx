@@ -75,16 +75,9 @@ export default function App() {
   ]);
 
   return (
-    <ConfigProvider theme={configAnt} locale={generateLocaleProvider('ru')}>
+    <ConfigProvider theme={configAnt}>
       <div className="store">
-        <Suspense
-          fallback={
-            <Loader
-            // title={constants.LOADER.DEFAULT.TITLE}
-            // text={constants.LOADER.DEFAULT.TEXT}
-            />
-          }
-        >
+        <Suspense fallback={<Loader />}>
           <RouterProvider router={router} />
         </Suspense>
         <ModalBuilder />

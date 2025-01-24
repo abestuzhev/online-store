@@ -18,10 +18,6 @@ app.use(fileUpload({}))
 app.use('/api', router)
 app.use(errorMiddleware)
 
-app.get('/', (req,res ) => {
-    res.status(200).json({message: 'WORKING!!!!'})
-})
-
 
 const start = async () => {
     try {
@@ -35,3 +31,5 @@ const start = async () => {
 
 
 start()
+
+module.exports = app;

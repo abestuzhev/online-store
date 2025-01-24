@@ -8,11 +8,7 @@ import { fetchCards } from '../../store/reducers/cards/actionCreator';
 import ProductList from '../../components/ProductList';
 
 function Favorites() {
-  const location = useLocation();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const { id } = useParams();
   const { favorites } = useSelector((state) => state.favorites);
 
   useEffect(() => {

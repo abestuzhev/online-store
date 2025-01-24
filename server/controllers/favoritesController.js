@@ -1,4 +1,4 @@
-const {Basket, Product, Favorites} = require("../models/models");
+const {Product, Favorites} = require("../models/models");
 
 class FavoritesController {
     async add(req, res) {

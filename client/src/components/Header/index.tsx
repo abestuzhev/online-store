@@ -21,12 +21,25 @@ function Header() {
     );
   };
 
+  const errorHandler = () => {
+    dispatch(
+      setModal({
+        type: 'ModalMessage',
+        content: {
+          title: 'Что-то пошло не так.',
+          size: 'medium',
+          text: 'Не переживайте, мы уже чиним. Попробуйте обновить страницу или зайти в сервис чуть позже',
+        },
+      })
+    );
+  };
+
   return (
     <div className={styles.header}>
       <div className="pageLayout">
         <div className={styles.headerWrapper}>
           <div className={styles.headerLayout}>
-            <div className={styles.headerLogo}>
+            <div className={styles.headerLogo} onClick={errorHandler}>
               <div className={styles.headerLogoImg} />
               SoundHub
             </div>

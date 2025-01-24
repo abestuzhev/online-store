@@ -3,8 +3,8 @@ const router = new Router();
 const favoritesController = require('../controllers/favoritesController')
 const checkRole = require('../middleware/RoleMiddleware')
 
-router.get('/add/:id',  favoritesController.add);
-router.get('/remove/:id',  favoritesController.remove);
-router.get('/', favoritesController.getAll);
+router.get('/add/:id', checkRole('ADMIN'), favoritesController.add);
+router.get('/remove/:id', checkRole('ADMIN'), favoritesController.remove);
+router.get('/', checkRole('ADMIN'), favoritesController.getAll);
 
 module.exports = router;

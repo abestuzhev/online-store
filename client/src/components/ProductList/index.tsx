@@ -7,8 +7,6 @@ import { canArrayValues } from '../../helpers/functions';
 import ProductCard from './ProductCard/ProductCard';
 
 function ProductList({ view, cards }) {
-  const dispatch = useDispatch();
-
   const { isLoadingCard } = useSelector((state) => state.cards);
 
   return (
@@ -18,7 +16,7 @@ function ProductList({ view, cards }) {
       })}
     >
       {isLoadingCard ? (
-        'load'
+        ''
       ) : (
         <>
           {canArrayValues(cards) &&
